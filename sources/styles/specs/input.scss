@@ -14,12 +14,13 @@ mn-date {
     }
 
     &::-webkit-datetime-edit{
-      color: transparent;
-      transition: color .2s ease;
+      opacity: 0;
+      transition: all .15s ease;
     }
 
     &:focus::-webkit-datetime-edit{
-      color: #000;
+      opacity: 1;
+      transition: all .2s .2s ease;
     }
   }
 }
