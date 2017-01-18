@@ -1,0 +1,21 @@
+{
+  "name": "mn-date",
+  "description": "A input date, with minimalist design",
+  "main": [
+    "dist/mn-date.css",
+    "dist/mn-date.js"
+  ],
+  "authors": [
+    "Darlan Mendonça <darlanmendonca@gmail.com>"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "dependencies": {
+    "mn-input": "^0.0.46"
+  },
+  "devDependencies": {
+    "mn-gh-page": "^0.0.13",
+    "mn-form": "^0.0.7",
+    "mn-button": "^0.0.11"
+  }
+}
