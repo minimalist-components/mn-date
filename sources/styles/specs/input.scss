@@ -12,6 +12,21 @@ mn-date {
      -webkit-appearance: none;
       display: none;
     }
+
+    &::-webkit-calendar-picker-indicator {
+      opacity: 1;
+      padding: 0;
+      width: 0;
+      height: 0;
+      box-sizing: border-box;
+      border-left: .35em solid transparent;
+      border-right: .35em solid transparent;
+      border-top: .35em solid $oc-gray-6;
+      position: absolute;
+      top: 50%;
+      right: .5em;
+      transform: translate(0, -50%);
+    }
   }
 
   &:not(.has-value) {
