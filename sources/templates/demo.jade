@@ -14,14 +14,28 @@ body
   h2 mn-date
   include github-corner
 
-  .layout-fullscreen.layout-centered
-    .layout-container
-      mn-form.layout-column.layout-sm-row.submitted
+  .mn-layout-fullscreen.mn-layout-centered
+    .mn-layout-container
+      mn-form.mn-layout-column.mn-layout-sm-row.submitted
         mn-date.flex(placeholder='a date')
         mn-date.flex(placeholder='birthdate' value='1990-09-04')
         //- value='1990-09-04'
         //- mn-date.flex(placeholder='another number')
         //- button.mn-button submit
+
+  .docs.mn-layout-container
+    mn-code.sh.
+      npm install --save mn-select
+
+    p And bundle dependencies and main files in <strong>dist/</strong> with your preferred tool.
+
+    h3 usage
+    p In your html, you can use the tag <strong class="tag">mn-date</strong> e.g.
+    mn-code.
+      <mn-date placeholder="Number"></mn-date>
+      <mn-date value="2017-01-18"></mn-date>
+
+    p The following attributes from input date are supported in this component, <em>max</em> and <em>min</min>
 
   block scripts
     script(src='docs/vendor.js')
