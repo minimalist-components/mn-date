@@ -1,8 +1,17 @@
 class MnDate extends window.MnInput {
   constructor(self) {
     self = super(self)
+
+    const value = this.getAttribute('value')
+
+    if (this.getAttribute('value')) {
+      this.setAttribute('value', value.slice(0, 10))
+      this.value = value.slice(0, 10)
+    }
+
     const input = this.querySelector('input')
     input.setAttribute('type', 'date')
+    input.setAttribute('value', value)
 
     const attributes = Array
       .from(this.attributes)
@@ -36,7 +45,6 @@ class MnDate extends window.MnInput {
       const value = attributes.filter(attr => attr.name === attribute.name)[0].value
       input.setAttribute(attribute.name, value)
     }
-
   }
 }
 
